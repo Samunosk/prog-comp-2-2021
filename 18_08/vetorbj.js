@@ -38,6 +38,7 @@ let gerenciaRedesSociais = () => {
     }
 
   // cadastro dos usuários
+  /*
   let vetorUsuarios = []
   let i = 0
   while (i<5){
@@ -62,7 +63,32 @@ let gerenciaRedesSociais = () => {
           alert(`Usuário não inserido, pois a Rede social não foi encontrada`)
       }
       i++
-    }
-}
+    }*/
+   
+        //EX1
         let codigo = Number(prompt(`Informe o código:`))
         let conta = 0
+        for(let i=0;i<5;i++){
+            if(vetorUsuarios[i].codigoRedeSocial == codigo){
+                conta = conta + vetorUsuarios[i].qtdePosts
+            }
+
+        }
+        if (conta == 0){
+            console.log(`Não houve postagem ou rede social não existe`)
+        }
+        else{
+            console.log(`A qtde de post na rede social ${codigo} é ${conta}`)
+        }
+        //EX2
+        for(let i=0;i<5;i++){
+            let conta = 0
+            for(let j=0;j<5;j++){
+                if(vetorRedesSociais[i].codigo == vetorUsuarios[j].codigoRedeSocial){
+                conta = conta + vetorUsuarios[i].qtdePosts
+                 }
+            }
+            console.log(`A qtde de post da rede social ${vetorRedesSociais[i].codigo} é ${conta}`)
+        }
+        //EX3
+}
