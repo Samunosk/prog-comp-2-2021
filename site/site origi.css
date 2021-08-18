@@ -1,0 +1,55 @@
+﻿BODY {background:orange;} 
+header {
+background-color:black;
+color:black;
+text-align:center;
+padding: 30px 50px 10px 30px;	
+margin-top: -20px;
+margin-left: -20px;
+margin-right: -20px ;
+}
+nav {
+line-height:30px;
+background-color:#000000;
+height:1280px;
+width:100px;
+float:left;
+padding: 60px 30px 200px 30px;
+text-align:center;	
+}
+section {
+height:1280px;
+width:750px;
+float:left;
+padding:5px;
+text-align: center;
+position: absolute;
+float:right;
+margin-left : 400px;
+	
+}
+footer {
+background-color:black;
+color:white;
+clear:both;
+text-align:center;
+padding:5px;
+bottom:0;
+position: fixed;		
+}
+H1 {
+font-family: 'Comic Sans MS';
+background-attachment: fixed;
+font-size: 36pt;
+color: #66ff66;
+}
+img {
+float : none;
+width:50%;
+}
+
+
+
+
+
+	

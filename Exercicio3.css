@@ -1,0 +1,13 @@
+#ex3{
+    outline: red 2px solid; 
+    padding: 30px ; 
+    width: 600px; 
+    margin: 40px auto;
+         }
+         #kmVform ,#kmTform,#kmValform, #button{
+             margin: 10px;
+         }
+         h2{
+             color: red;
+         }
+        

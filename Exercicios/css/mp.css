@@ -1,0 +1,29 @@
+    /*CSS*/
+    #formulario{
+        outline: blue 2px solid; /*borda azul de 2 px de expessura*/
+        padding: 30px ; /*espaçamento interno de 30 pixels*/
+        width: 600px; /*largura do formulario*/
+        margin: 40px auto;/*espaçamento externo de 40 px centralizados*/
+             }
+             #pesoform ,#alturaform, #button, #button2 {
+                 margin: 10px;
+             }
+             h2{
+                 color: blue;
+             }
+             #menu ul{
+                 padding:10px;
+                 margin:10px;
+                 background-color:green;
+                 list-style: none;
+             }
+             #menu ul li{
+                 display: inline;
+                 padding:30px;
+             }
+             #menu ul li a{
+                 background-color:blue;
+                 color: white;
+                 text-decoration:none;
+                 border-bottom:3px solid #ededed;
+             }

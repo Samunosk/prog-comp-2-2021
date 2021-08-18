@@ -1,0 +1,113 @@
+<html lang="pt-br">
+<head>
+<meta charset="8751-2">
+<link rel="stylesheet" href="site origi.css">
+<title>HARDWARE INFO</title>
+</head>
+<body style="overflow-x:hidden;">
+
+    <header>
+        <h1>HARDWARE INFO</h1>
+        </header>
+<script>
+function organizar(){ 
+                let value1 = Number(document.getElementById("value1").value)
+                
+                let value2 =  Number(document.getElementById("value2").value)
+
+                let value3 =  Number(document.getElementById("value3").value)
+
+                let value4 =  Number(document.getElementById("value4").value)
+                
+                let value5 =  Number(document.getElementById("value5").value)
+
+                let value6 =  Number(document.getElementById("value6").value)
+
+                let value7 =  Number(document.getElementById("value7").value)
+
+                let valt = value1+ value2+ value3+ value4+ value5+ value6+ value7
+
+                alert(`O Valor do PC é de: ${valt.toFixed(2)}`) // é o mais novo
+
+                alert("O valor do PC é de " + valt.toFixed(2)) // é o mais velho
+                
+            }
+           
+
+</script>
+<body>
+    <nav style="color: #ff3300; font-size: 15px; margin-left:-1em;">
+        <p style="color:#66ff66;font-size:20px;">Para Saber mais<br/>Selecione uma peça:</p>
+        <br><p><a href= "index.html" style="color:red;">PLACA MÃE</a></p></br>
+        <br><p><a href= "pg2siteorigi.html" style="color:red;">PROCESSADOR</a></p></br>
+        <br><p><a href= "pg3siteorigi.html" style="color:red;">MEMÓRIA RAM</a></p></br>
+        <br><p><a href= "pg4siteorigi.html" style="color:red;">HD SEAGATE</a></p></br>
+        <br><p><a href= "pg5siteorigi.html" style="color:red;">PLACA DE VIDEO</a></p></br>
+        <br><p><a href= "pg6siteorigi.html" style="color:red;">FONTE</a></p></br>
+        <br><p><a href= "pg7siteorigi.html" style="color:red;">GABINETE</a></p></br>
+        <br><p><a href= "pg8siteorigi.html" style="color:red;">CALCULADORA DE VALOR</a></p></br>
+        <br><p><a href= "pg9siteorigi.html" style="color:red;">PC GAMER VIDEO</a></p></br>
+        <br><p><a href= "pg10siteorigi.html" style="color:red;">TABELA</a></p></br>
+    </nav>
+        
+<div id="formulario">    
+    <h1 style="color: #ff3300; font-size: 20px;">CALCULADORA DE VALOR</h1>
+    <h3 style="color: #ff3300; font-size: 20px;">Calcule o valor do PC</h3>
+  
+<div id="val1"><!-- container -->
+    <label for="value1">Valor da Placa Mãe</label><!-- rótulo -->
+
+<input type ="number" id="value1"/><!-- caixa de entrada de dados -->
+
+
+</div>
+
+
+<div id="val2">
+    <label for="value2">Valor de Processador</label>
+<input type ="number" id="value2"/>
+
+</div>
+
+<div id="val3">
+    <label for="value3">Valor de Memória Ram</label>
+<input type ="number" id="value3"/>
+
+</div>
+
+<div id="val4">
+    <label for="value4">Valor do HD</label>
+<input type ="number" id="value4"/>
+
+</div>
+
+<div id="val5">
+    <label for="value5">Valor Placa de Video</label>
+<input type ="number" id="value5"/>
+
+</div>
+
+<div id="val6">
+    <label for="value6">Valor Fonte</label>
+<input type ="number" id="value6"/>
+
+</div>
+
+<div id="val7">
+    <label for="value7">Valor de Gabinete</label>
+<input type ="number" id="value7"/>
+
+</div>
+
+<div id = "botao">
+<button onClick="organizar()" type ="button">Calcular</button>
+
+
+
+
+</div>
+</div>
+
+</body>
+
+</html>

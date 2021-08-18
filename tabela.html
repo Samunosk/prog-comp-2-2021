@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>
+        Tabela
+    </title>
+<meta charset="utf-8"/><!--sistema de codificação ç á à ã-->
+ <!-- meta é auto-explicação falar de si mesmo -->
+ <style>
+     /*CSS*/
+     #sobre{
+outline: blue 2px solid; /*borda azul de 2 px de expessura*/
+padding: 30px ; /*espaçamento interno de 30 pixels*/
+width: 600px; /*largura do formulario*/
+margin: 40px auto;/*espaçamento externo de 40 px centralizados*/
+     }
+    
+     
+   
+     #menu ul{
+         padding:10px;
+         margin:10px;
+         background-color:green;
+         list-style: none;
+     }
+     #menu ul li{
+         display: inline;
+         padding:30px;
+     }
+     #menu ul li a{
+         background-color:blue;
+         color: white;
+         text-decoration:none;
+         border-bottom:3px solid #ededed;
+     }
+     #conteudo{
+         width: 800px;
+         margin: 30px auto;
+     }
+    #tabela{
+        font-family:Arial, Helvetica, sans-serif;
+        width: 100%;
+        border-collapse: collapse;
+    }
+    td,th{
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+     th{
+         background-color: green;
+         color:white;
+     }
+     tr:hover{
+      background-color:yellow;
+    }
+    .menu-suspenso{
+        position: relative;
+    }
+    .conteudo-suspenso{
+        position: absolute;
+        display: none;
+        background-color: cyan;
+        min-width: 160px;
+        box-shadow: 0px 8px 16 px 0 px rgba(0,0,0,2);
+        
+    }
+    .menu-suspenso:hover  .conteudo-suspenso{
+        display: block;
+    }
+    .conteudo-suspenso a{
+        display: block;
+        padding: 4px;
+        text-decoration: none;
+    }
+</style>
+
+
+<body>
+   <nav id="menu">
+       <ul>
+           <li>
+            <a href="home.html">Home</a>
+           </li>
+           <li>
+            <a href="imc.html">Calculadora de IMC</a>
+           </li>
+           <li>
+           <a href="sobre.html"> Custo de viagem</a>
+           </li>
+           <li>
+            <a href="viagem.html">Sobre</a>
+           </li>
+           <li> <a href="galeria.html">Galeria</a>
+           </li>
+           <li> <a href="videos.html">Videos do Youtube</a>
+            </li>
+            <li> <a href="tabela.html">Tabela Nutricional</a>
+            </li>
+       </ul>
+   </nav>
+   <div id="conteudo">
+   <div id="tabela"> 
+       <table id="games">
+        <tr>
+            <th>
+                Nome do jogo
+            </th>
+            <th>
+                Site do jogo
+            </th>
+            <th>
+                Tipo do jogo
+            </th>
+        </tr>
+        <tr>
+            <td>
+                GTA
+                
+            </td>
+            <td>
+                <a href="https://www.epicgames.com/store/pt-BR/p/grand-theft-auto-v">
+                    https://www.epicgames.com/store/pt-BR/p/grand-theft-auto-v</a>
+            </td>
+            <td>
+                Jogo maldoso
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Fortnite
+                
+            </td>
+            <td>
+                <a href=" https://www.epicgames.com/fortnite/pt-BR/home">
+                    https://www.epicgames.com/fortnite/pt-BR/home
+                </a>
+
+            </td>
+            <td>
+                Jogo primeira pessoa
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Rocket League
+                
+            </td>
+            <td>
+                <a href= "https://www.rocketleague.com/pt-br/">
+                    https://www.rocketleague.com/pt-br/
+                </a>
+
+
+            </td>
+            <td>
+                Esporte
+            </td>
+        </tr>
+       </table>
+       <div class="menu-suspenso">
+        <button type="button"> Calculadora do IMC </button>
+      
+       <div class="conteudo-suspenso">
+       <a href="imc-homem.html">Homem</a>
+       <a href="imc-mulher.html">Mulher</a>
+       </div>
+       </div>
+</div>
+</div>
+</body>
+
+</html>

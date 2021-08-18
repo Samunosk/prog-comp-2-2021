@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>
+        viagem
+    </title>
+<meta charset="utf-8"/><!--sistema de codificação ç á à ã-->
+ <!-- meta é auto-explicação falar de si mesmo -->
+ <style>
+     /*CSS*/
+     #pedagio{
+outline: blue 2px solid; /*borda azul de 2 px de expessura*/
+padding: 30px ; /*espaçamento interno de 30 pixels*/
+width: 600px; /*largura do formulario*/
+margin: 40px auto;/*espaçamento externo de 40 px centralizados*/
+     }
+     #pedagioform,#pedagioform2, #button2,#res_pedagios {
+         margin: 10px;
+     }
+     h2{
+         color: blue;
+     }
+     #menu ul{
+         padding:10px;
+         margin:10px;
+         background-color:green;
+         list-style: none;
+     }
+     #menu ul li{
+         display: inline;
+         padding:30px;
+     }
+     #menu ul li a{
+         background-color:blue;
+         color: white;
+         text-decoration:none;
+         border-bottom:3px solid #ededed;
+     }
+</style>
+
+<script type="text/javascript" src="js/viagem.js">
+
+    
+
+</script>
+<body>
+   <nav id="menu">
+    <ul>
+        <li>
+         <a href="home.html">Home</a>
+        </li>
+        <li>
+        <a href="imc.html"> Calculadora do Imc </a>
+        </li>
+        <li>
+        <a href="sobre.html"> Custo de viagem</a>
+        </li>
+        <li>
+         <a href="viagem.html">Sobre</a>
+        </li>
+        <li>
+         <a href="galeria.html">Galeria</a>
+        </li>
+        <li> <a href="videos.html">Videos do Youtube</a>
+        </li>
+        <li> <a href="tabela.html">Tabela Nutricional</a>
+        </li>
+    </ul>
+   </nav> 
+
+
+
+
+<div id="pedagio">    
+    <h2>
+        
+        Sistema de Custo de viagem
+
+    </h2>
+<div id="pedagioform"><!-- container -->
+    <label for="pedagio1">Valor do 1° Pedagio</label><!-- rótulo -->
+
+<input type ="number" id="pedagio1"/><!-- caixa de entrada de dados -->
+
+
+</div>
+
+
+<div id="pedagioform2">
+    <label for="pedagio2">Valor do 2° Pedagio</label>
+<input type ="number" id="pedagio2"/>
+
+</div>
+
+<div id="valcombform">
+    <label for="valcomb">Valor do combustivel</label>
+<input type ="number" id="valcomb"/>
+
+</div>
+
+<div id="res_pedagios">
+    <label><strong>Resultado</strong></label>
+<label id="lbResultado"></label>
+
+</div>
+<div id = "botao1">
+<button onClick= "somar()" type ="button2">Calcular</button>
+</div>
+
+</div>
+
+</body>
+
+</html>
