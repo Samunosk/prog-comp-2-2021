@@ -9,18 +9,18 @@ let sistemaVendas = () => {
             case 1: let objeto = {
                         codigo: Number(prompt(`Informe código`)),
                         nome: prompt(`Informe nome`),
-                        rg: prompt(`Informe rg`) // 23.646.356-1
+                        rg: prompt(`Informe rg`) 
                     }
-                    // verifica se já tem outro vendedor com o mesmo código
+                    
                     let achou = false
-                    // vetVendedores.length retorna o tamanho do vetor
+                    
                     for(let i=0; i < vetVendedores.length;i++){
                         if (vetVendedores[i].codigo == objeto.codigo){
-                            achou = true // achei - não posso cadastrar      
+                            achou = true    
                         }
                     }
                     if (!achou){
-                         // adiciona objeto no vetor
+                      
                         vetVendedores.push(objeto)
                         alert(`Vendedor cadastrado com sucesso`)
                     }
@@ -36,9 +36,9 @@ let sistemaVendas = () => {
                     }
                     let achou1 = false
                     for(let i=0;i<vetVendas.length;i++){
-                        // não podemos cadastrar duas vendas para um mesmo vendedor no mesmo mês
+                       
                         if ((vetVendas[i].codigo == objeto1.codigo) && (vetVendas[i].mes == objeto1.mes)){
-                            achou1 = true // encontrei - não podemos cadastrar venda
+                            achou1 = true 
                         }
                     }
                     if (!achou1){
@@ -51,7 +51,7 @@ let sistemaVendas = () => {
                     break
             case 3: let codigo = Number(prompt(`Informe o código do vendedor`))
                     let mes = Number(prompt(`Informe o mês da venda`))
-                    // percorre vetor de vendas
+                   
                     let achou3 = false
                     for(let i=0;i<vetVendas.length;i++){
                         if ((vetVendas[i].codigo == codigo) && (vetVendas[i].mes == mes)){
@@ -64,7 +64,7 @@ let sistemaVendas = () => {
                     }
                     break
             case 4: let codigo4 = Number(prompt(`Informe o código do vendedor`))
-                    // percorre o vetor de vendas
+                    
                     let soma = 0
                     for(let i=0;i<vetVendas.length;i++){
                         if (vetVendas[i].codigo == codigo4){
@@ -84,17 +84,17 @@ let sistemaVendas = () => {
                     for(let i=0;i<vetVendas.length;i++){
                         if (vetVendas[i].mes == mes5){
                             if (vetVendas[i].valor > maiorValor){
-                                maiorValor = vetVendas[i].valor // atualiza o maior valor
-                                vendedorMaisVendeu = vetVendas[i].codigo // atualiza vendedor
+                                maiorValor = vetVendas[i].valor 
+                                vendedorMaisVendeu = vetVendas[i].codigo 
                             }
                         }
                     }+
                     console.log(`O vendedor que mais vendeu foi ${vendedorMaisVendeu} com ${maiorValor}`)
                     break
             case 6: let vetMeses = [0,0,0,0,0,0,0,0,0,0,0,0]
-                    // percorre o vetor de vendas
+                    
                     for(let i=0;i<vetVendas.length;i++){
-                        let aux = vetVendas[i].mes // mês da venda
+                        let aux = vetVendas[i].mes
                         vetMeses[aux-1] = vetMeses[aux-1] + vetVendas[i].valor
                     }
                     console.log(vetMeses)
