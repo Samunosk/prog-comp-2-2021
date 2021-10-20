@@ -50,3 +50,10 @@ let vetor5 = [5,9,12,15,18]
 let soma = vetor5.reduce((total,elemento)=>{
     return total + elemento
 })
+
+//exemplo da func filter
+let vetor7 = [6,9,3,7,10]
+let pares = vetor7.filter ((elemento) =>{
+    return elemento % 2 == 0
+})
+console.log(pares)
