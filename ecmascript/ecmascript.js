@@ -57,3 +57,8 @@ let pares = vetor7.filter ((elemento) =>{
     return elemento % 2 == 0
 })
 console.log(pares)
+
+let carros = ["BMW","Volvo","Mini"];
+for (let elemento of carros){
+    console.log(`${elemento}`)
+}
